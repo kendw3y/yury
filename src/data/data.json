@@ -1,0 +1,67 @@
+{
+  "products": [
+    {
+      "id": "8",
+      "name": "Beats Fit Pro - True Wireless Super MAx",
+      "price": 129.99,
+      "image": "/placeholder.svg?height=80&width=80",
+      "color": "Phantom Black",
+      "quantity": 1
+    },
+    {
+      "id": "3",
+      "name": "Beats Fit Pro - True Wireless Super MAx",
+      "price": 129.99,
+      "image": "/placeholder.svg?height=80&width=80",
+      "color": "Phantom Black",
+      "quantity": 1
+    }
+  ],
+  "usuarios": [
+    {
+      "id": "0.04652407252310786",
+      "contrasena": "asd",
+      "direccion": "121",
+      "email": "karel0931@gmail.com",
+      "Entidad": "212",
+      "nombre_apellidos": "Edzio Menendez Dertaasd",
+      "telefono": "054493000"
+    },
+    {
+      "id": "0.19002634261935725",
+      "contrasena": "2",
+      "direccion": "Calle de la Palma, 3",
+      "email": "karel0931@gmail.com",
+      "Entidad": "Universidad de Murcia",
+      "nombre_apellidos": "Luis Enrique",
+      "telefono": "054493000"
+    },
+    {
+      "id": "0.7675397321496065",
+      "contrasena": "z",
+      "direccion": "Calle de la Palma, 3",
+      "email": "karel0931@gmail.com",
+      "Entidad": "asd",
+      "nombre_apellidos": "Maria Sancheasdz",
+      "telefono": "054493000"
+    },
+    {
+      "id": "0.6306731998485129",
+      "contrasena": "hj",
+      "direccion": "hj",
+      "email": "karel0931@gmail.com",
+      "Entidad": "hj",
+      "nombre_apellidos": "Luis Enrique",
+      "telefono": "054493000"
+    },
+    {
+      "id": "0.1825257888237175",
+      "contrasena": "asd",
+      "direccion": "asd",
+      "email": "karel0931@gmail.com",
+      "Entidad": "asd",
+      "nombre_apellidos": "Edzio Menendez",
+      "telefono": "054493000"
+    }
+  ]
+}
