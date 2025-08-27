@@ -113,7 +113,7 @@
   ],
   "encargos": [
     {
-      "id": 1,
+      "id": "1",
       "create": "2025-03-28T10:30:00Z",
       "client": {
         "id": "0.262605603967914",
@@ -141,7 +141,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": "2",
       "create": "2025-03-27T15:45:00Z",
       "client": {
         "id": "0.6748658588163454",
@@ -180,7 +180,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": "3",
       "create": "2025-03-26T09:20:00Z",
       "client": {
         "id": "0.34707161460367864",
@@ -208,7 +208,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": "4",
       "create": "2025-03-25T18:10:00Z",
       "client": {
         "id": "0.0660271087329759",
@@ -236,8 +236,92 @@
       ]
     },
     {
-      "id": 5,
+      "id": "5",
       "create": "2025-08-24T12:00:00Z",
+      "client": {
+        "id": "0.6504690566717929",
+        "contrasena": "asd",
+        "direccion": "asd",
+        "email": "asdasd@asdasd.asdasd",
+        "Entidad": "asd",
+        "nombre_apellidos": "asd",
+        "telefono": "asd"
+      },
+      "total": 12,
+      "status": "pendiente",
+      "productos": [
+        {
+          "id": "1",
+          "name": "Bolsa Non-Woven JAZZIN",
+          "price": 15,
+          "category": "bolsas-mochilas",
+          "image": "/bolsa-jazzin.png",
+          "description": "Bolsa Non-Woven JAZZIN",
+          "isCoustom": false,
+          "favorite": false,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "create": "2025-08-20T12:00:00Z",
+      "client": {
+        "id": "0.6504690566717929",
+        "contrasena": "asd",
+        "direccion": "asd",
+        "email": "asdasd@asdasd.asdasd",
+        "Entidad": "asd",
+        "nombre_apellidos": "asd",
+        "telefono": "asd"
+      },
+      "total": 12,
+      "status": "pendiente",
+      "productos": [
+        {
+          "id": "1",
+          "name": "Bolsa Non-Woven JAZZIN",
+          "price": 15,
+          "category": "bolsas-mochilas",
+          "image": "/bolsa-jazzin.png",
+          "description": "Bolsa Non-Woven JAZZIN",
+          "isCoustom": false,
+          "favorite": false,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "create": "2025-08-20T12:00:00Z",
+      "client": {
+        "id": "0.6504690566717929",
+        "contrasena": "asd",
+        "direccion": "asd",
+        "email": "asdasd@asdasd.asdasd",
+        "Entidad": "asd",
+        "nombre_apellidos": "asd",
+        "telefono": "asd"
+      },
+      "total": 12,
+      "status": "pendiente",
+      "productos": [
+        {
+          "id": "1",
+          "name": "Bolsa Non-Woven JAZZIN",
+          "price": 15,
+          "category": "bolsas-mochilas",
+          "image": "/bolsa-jazzin.png",
+          "description": "Bolsa Non-Woven JAZZIN",
+          "isCoustom": false,
+          "favorite": false,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "create": "2025-08-20T12:00:00Z",
       "client": {
         "id": "0.6504690566717929",
         "contrasena": "asd",
@@ -337,6 +421,42 @@
       "Entidad": "asd",
       "nombre_apellidos": "asdasdasd",
       "telefono": "123123"
+    },
+    {
+      "id": "0.6316219494986618",
+      "contrasena": "asd",
+      "direccion": "asd",
+      "email": "karel0931@gmail.com",
+      "Entidad": "asd",
+      "nombre_apellidos": "Edzio Menendez",
+      "telefono": "054493000"
+    },
+    {
+      "id": "0.8667869921555015",
+      "contrasena": "asd",
+      "direccion": "asd",
+      "email": "karel0931@gmail.com",
+      "Entidad": "asd",
+      "nombre_apellidos": "Edzio Menendez",
+      "telefono": "054493000"
+    },
+    {
+      "id": "0.4211191048860973",
+      "contrasena": "asd",
+      "direccion": "asd",
+      "email": "karel0931@gmail.com",
+      "Entidad": "Universidad de Murcia",
+      "nombre_apellidos": "asdasdasd",
+      "telefono": "054493000"
+    },
+    {
+      "id": "0.003078784273674584",
+      "contrasena": "asd",
+      "direccion": "asd",
+      "email": "asdasd@asdasd.asdasd",
+      "Entidad": "asd",
+      "nombre_apellidos": "asd",
+      "telefono": "asd"
     }
   ]
 }

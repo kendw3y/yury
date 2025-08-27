@@ -1,8 +1,8 @@
 import { CoustomButton, Modal } from "@/components";
-import { ModalDeletCoustom } from "@/components/ModalDeletCoustom";
 import type { Producto } from "@/modules/shopping/interfaces/interfaces";
-import { Eye, Trash } from "lucide-react";
+import { Trash } from "lucide-react";
 import { useState } from "react";
+import { EditProduct } from "./EditProduct";
 
 type Props = {
 	product: Producto;
@@ -62,7 +62,7 @@ export const ProductItem = ({ product }: Props) => {
 								</Modal>
 				</div>
 			</div>
-			{showModal&&<ModalDeletCoustom product={product} onClouse={() => setShowModal(false)}/>}
+			{showModal&&<EditProduct product={product} onClouse={() => setShowModal(false)}/>}
 		</>
 	);
 };

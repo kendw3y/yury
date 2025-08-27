@@ -1,18 +1,18 @@
 import { mainCategories } from "@/data/categorias";
 import type { Producto } from "@/modules/shopping/interfaces/interfaces";
 import { useState } from "react";
-import { CoustomButton } from "./CoustomButton";
+import { CoustomButton } from "../../../components/CoustomButton";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { schema } from "@/schemas/productEditSchema";
-import { ImageUploadButton } from "./InputImg";
+import { ImageUploadButton } from "../../../components/InputImg";
 
 type Props = {
   product: Producto;
   onClouse: () => void;
 };
 
-export const ModalDeletCoustom = ({ product, onClouse }: Props) => {
+export const EditProduct = ({ product, onClouse }: Props) => {
   const [edit, setEdit] = useState(false);
 
   const {

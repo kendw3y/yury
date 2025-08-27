@@ -1,5 +1,5 @@
 // components/CustomSelect.tsx
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 interface Option {
   label: string;
@@ -8,8 +8,8 @@ interface Option {
 
 interface CustomSelectProps {
   options: Option[];
-  value: string | number;
-  onChange: (value: string | number) => void;
+  value: string;
+  onChange: (value: string ) => void;
   placeholder?: string;
   // Estilos personalizables
   bgColor?: string; // fondo
@@ -17,7 +17,7 @@ interface CustomSelectProps {
   borderColor?: string; // color del borde
   borderRadius?: string; // redondeo: 'none', 'sm', 'md', 'lg', 'full'
   borderWidth?: string; // grosor: '1', '2', '4'
-  size?: 'sm' | 'md' | 'lg'; // tamaño
+  size?: "sm" | "md" | "lg"; // tamaño
   className?: string; // clases adicionales
 }
 
@@ -26,13 +26,13 @@ export const CustomSelect: React.FC<CustomSelectProps> = ({
   value,
   onChange,
   placeholder = "Selecciona una opción",
-  bgColor = 'bg-white',
-  textColor = 'text-gray-700',
-  borderColor = 'border-gray-300',
-  borderRadius = 'rounded-md',
-  borderWidth = 'border',
-  size = 'md',
-  className = '',
+  bgColor = "bg-white",
+  textColor = "text-gray-700",
+  borderColor = "border-gray-300",
+  borderRadius = "rounded-md",
+  borderWidth = "border",
+  size = "md",
+  className = "",
 }) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -41,19 +41,22 @@ export const CustomSelect: React.FC<CustomSelectProps> = ({
     setIsOpen(false);
   };
 
-  const selectedLabel = options.find(opt => opt.value === value)?.label || placeholder;
+  const selectedLabel =
+    options.find((opt) => opt.value === value)?.label || placeholder;
 
   // Tamaños
   const sizeClasses = {
-    sm: 'text-sm py-1 px-2',
-    md: 'text-base py-2 px-3',
-    lg: 'text-lg py-3 px-4',
+    sm: "text-sm py-1 px-2",
+    md: "text-base py-2 px-3",
+    lg: "text-lg py-3 px-4",
   };
 
   return (
     <div className={`relative inline-block w-full ${className}`}>
       {/* Select simulado */}
-      <div onClick={() => setIsOpen(!isOpen)} className={` ${bgColor} ${textColor} ${borderWidth} ${borderColor} ${borderRadius} ${sizeClasses[size]} cursor-pointer flex justify-between items-center border hover:border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-200 shadow-sm
+      <div
+        onClick={() => setIsOpen(!isOpen)}
+        className={` ${bgColor} ${textColor} ${borderWidth} ${borderColor} ${borderRadius} ${sizeClasses[size]} cursor-pointer flex justify-between items-center border hover:border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-200 shadow-sm
         `}
         role="combobox"
         aria-expanded={isOpen}
@@ -78,7 +81,8 @@ export const CustomSelect: React.FC<CustomSelectProps> = ({
 
       {/* Dropdown */}
       {isOpen && (
-        <ul className={`   ${bgColor}
+        <ul
+          className={`   ${bgColor}
 ${textColor}
 ${borderWidth} ${borderColor}
 ${borderRadius}
@@ -124,10 +128,7 @@ ring-opacity-5
 
       {/* Overlay para cerrar al hacer clic fuera */}
       {isOpen && (
-        <div
-          className="fixed inset-0 z-0"
-          onClick={() => setIsOpen(false)}
-        />
+        <div className="fixed inset-0 z-0" onClick={() => setIsOpen(false)} />
       )}
     </div>
   );

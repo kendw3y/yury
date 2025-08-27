@@ -4,6 +4,7 @@ import { motion,useAnimationControls } from "framer-motion";
 import { EditButton } from "./EditButton";
 import AddButton from "./AddButton";
 import { DeletButton } from "./DeletButton";
+import { Search } from "lucide-react";
 
 interface ActionButtonsProps {
 	filters: string;
@@ -21,17 +22,13 @@ export const ActionButtons = ({ filters, setFilters, rowSelcted }: ActionButtons
 		<div className="sm:flex w-full sm:flex-row flex flex-col-reverse gap-3  sm:justify-between sm:items-center ">
 			<div onMouseEnter={handleHover} className="flex items-center relative ">
 				<motion.button 
-				variants={{
-					hover: {color:'#62748e'}
-				}}
-				animate={controls}
-				className="absolute h-[37px] w-[37px]  top-0  bottom-0 right-1 text-slate-700  px-2 flex items-center rounded">
-					<HiSearch className="w-full h-full  " />
+				className="absolute h-[37px] w-[37px]  top-0  bottom-0 left-1 text-slate-700  px-2 flex items-center rounded">
+					<Search className="w-[18px] h-[18px] text-gray-400 " />
 				</motion.button>
 				<motion.input
 					type="text"
 					placeholder="Buscar..."
-					className="sm:w-auto w-full h-10 pl-4 py-2  placeholder:text-gray-400 text-gray-300 text-md  bg-slate-800 rounded-md transition duration-300 ease focus:outline-none focus:border-slate-600 hover:border-slate-500 shadow-md focus:shadow-md "
+					className="sm:w-auto w-full h-10 pl-10 py-2  placeholder:text-gray-400 text-gray-300 text-md  bg-slate-800 rounded-md transition duration-300 ease focus:outline-none focus:border-slate-600 hover:border-slate-500 shadow-md focus:shadow-md "
 					value={filters}
 					onChange={e => setFilters(e.target.value)}
 				/>
