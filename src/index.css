@@ -13,7 +13,7 @@
 
 body {
   background-color: var(--fondo);
-  
+  font-family: "Nunito", sans-serif;
 }
 
 @layer utilities {
@@ -23,6 +23,11 @@ body {
       margin: 0;
     }
   }
+
+@theme{
+  --breakpoint-mm: 1355px;
+  
+}
 
 .page-transition {
   animation: fadeIn 0.5s ease-out;
@@ -45,6 +50,7 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  
 }
 .nunito-medium {
   font-family: "Nunito", sans-serif;
@@ -88,7 +94,7 @@ body {
 }
 
 .scroll-container::-webkit-scrollbar{
-  width: 8px;
+  width: 10px;
   height: 200px;
 }
 
@@ -98,14 +104,14 @@ body {
 }
 
 .scroll-container::-webkit-scrollbar-thumb {
-  background-color: #888;
+  background-color: #8888885e;
   border-radius: 4px;
   border: 2px solid transparent;
   background-clip: content-box;
 }
 
 .scroll-container::-webkit-scrollbar-thumb:hover{
-  background-color: #666;
+  background-color: #888;
 }
 
 .scroll-container::-webkit-scrollbar-button {

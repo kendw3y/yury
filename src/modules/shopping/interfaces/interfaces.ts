@@ -7,6 +7,18 @@ export interface Product {
   quantity: number
 }
 
+export interface Producto {
+  id: number,
+  name: string,
+  price: number | string,
+  quantity?: number
+  category: string,
+  image: string,
+  description: string,
+  isCoustom: boolean,
+  favorite?: boolean
+}
+
 // export interface DeliveryInfo {
 //   fullName: string
 //   address: string

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 
-const PromotionalBanner: React.FC = () => {
+export const PromotionalBanner = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const location = useLocation();
   const isProductsPage = location.pathname === '/productos';

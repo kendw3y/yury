@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import AdminProductsPage from './adminprods';
-import UserProductsPage from './userprods';
+import UserProductsPage from './UserProds';
 
 const ProductsPage: React.FC = () => {
   const [userType, setUserType] = useState<string | null>(null);

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Eye, Heart } from 'lucide-react';
-import PromotionalBanner from '../componentes/banerpromocional';
+import {PromotionalBanner} from '../componentes/banerpromocional';
+
 
 const mainCategories = [
   { id: 'ropa-textiles', name: 'Ropa y Textiles' },

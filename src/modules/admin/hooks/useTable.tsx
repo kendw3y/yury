@@ -9,15 +9,22 @@ import {
 	type RowSelectionState,
 } from "@tanstack/react-table";
 import { useState } from "react";
-import { type User } from "@/types/types";
-import { useUser } from "./useUser";
 
-export const useCoustomTable = () => {
+interface useCoustomTableProps{
+	data:Array<any>,
+	columns: ColumnDef<any>[],
+	selctedRow:boolean
+
+}
+
+export const useCoustomTable = ({data : datas,columns: columnas,selctedRow}: useCoustomTableProps) => {
 	const [sorting, setSorting] = useState<SortingState>([]);
 	const [filters, setFilters] = useState("");
 	const [rowSelectionState, setRowSelectionState] = useState<RowSelectionState>({});
+	
+	
 
-	const columns: ColumnDef<User>[] = [
+	const columns: ColumnDef<any>[] =selctedRow?[
 		{
 			id: "checkbox",
 			header: ({ table }) => (
@@ -42,30 +49,9 @@ export const useCoustomTable = () => {
 				</label>
 			),
 		},
-		{
-			header: "Nombre y apellidos",
-			accessorKey: "nombre_apellidos",
-		},
-		{
-			header: "Email",
-			accessorKey: "email",
-		},
-		{
-			header: "Teléfono",
-			accessorKey: "telefono",
-		},
-		{
-			header: "Entidad",
-			accessorKey: "Entidad",
-		},
-		{
-			header: "Dirección",
-			accessorKey: "direccion",
-		},
-	];
-
-	const { users } = useUser();
-	const data: User[] = users ?? [];
+		...columnas
+	]:[...columnas];
+	const data: Array<any> = datas ?? [];
 
 	const table = useReactTable({
 		columns,

@@ -6,7 +6,7 @@ import { schema } from "@/schemas/userSchema";
 import { useRequired } from "@/hooks/useRequired";
 import { TriangleAlert } from "lucide-react";
 import { useUser } from "../hooks/useUser";
-import { useSelectedRowContext } from "../context/SelectRowContext";
+import { useSelectedRowContext } from "../context/UserSelectRowContext";
 import { useEffect, useState } from "react";
 
 interface EditUserProps {
@@ -30,7 +30,7 @@ export function EditUser({handelIsOpen}: EditUserProps) {
 	});
 	const { editOneUserMutation } = useUser();
 
-	const onsubmit = handleSubmit(async(data) => {
+	const onsubmit = handleSubmit((data) => {
 		console.log(data);
 		const newUser: User = {
 			id: user ? user.id : "",

@@ -13,7 +13,7 @@ export const Modal = ({ handleIsOpen, isOpen,children ,tittle}: Props) => {
     }
 	return (
 		<div className="fixed top-0 left-0 w-screen h-screen z-50 flex items-center justify-center overflow-auto bg-[#00000063]">
-			<div className="  h-full sm:h-auto w-full sm:w-auto ">
+			<div className="  sm:h-auto w-full sm:w-auto ">
 				<div className="relative flex flex-col gap-4 bg-[#1A1D2D] rounded-2xl shadow p-6 ">
                     <h1 className="text-xl text-center">{tittle&&tittle}</h1>
 					{/* Botón de cerrar */}

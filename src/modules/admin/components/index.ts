@@ -5,4 +5,4 @@ export * from './CoustomTable';
 export * from './DeletButton';
 export * from './EditButton';
 export * from './EditUser';
-export * from './Table';
+export * from './UserTable';

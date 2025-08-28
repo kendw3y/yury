@@ -2,7 +2,7 @@ import { CoustomButton } from "@/components/CoustomButton";
 import { Modal } from "@/components/Modal";
 import { useState } from "react";
 import { IoMdTrash } from "react-icons/io";
-import { useSelectedRowContext } from "../context/SelectRowContext";
+import { useSelectedRowContext } from "../context/UserSelectRowContext";
 import { useUser } from "../hooks/useUser";
 
 type Props = {
@@ -38,7 +38,7 @@ export const DeletButton = ({ disable }: Props) => {
 				className="text-hidden"
 			/>
 			<Modal handleIsOpen={handleIsOpen} isOpen={isModalOpen} tittle="Eliminar">
-				<div className="flex flex-col">
+				<div className="flex flex-col gap-4">
                     <p>¿Estás seguro que desea eliminar ({rowSelected.length}) usuario{rowSelected.length === 1?'':'s'}?</p>
                     <div className="flex justify-between items-center">
 						<CoustomButton handleOnClick={handleDelet} hoverColor="#f54927" colorButton="#F54927ab" tittleButton="Eliminar" />

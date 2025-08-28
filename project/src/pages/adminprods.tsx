@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { EyeIcon, PencilIcon, TrashIcon, HeartIcon } from '@heroicons/react/24/outline';
-import { Eye, Heart } from 'lucide-react';
+
+import { Eye, Heart, Pencil, Trash } from 'lucide-react';
 import PromotionalBanner from '../componentes/banerpromocional';
+
 
 const mainCategories = [
   { id: 'ropa-textiles', name: 'Ropa y Textiles' },
@@ -439,13 +440,13 @@ const AdminProductsPage: React.FC = () => {
               
               <div className="flex gap-3 mt-4">
                 <button onClick={() => handleView(product.id)} title="Ver producto">
-                  <EyeIcon className="w-6 h-6 text-blue-400 hover:text-blue-600" />
+                  <Eye className="w-6 h-6 text-blue-400 hover:text-blue-600" />
                 </button>
                 <button onClick={() => handleEdit(product.id)} title="Editar producto">
-                  <PencilIcon className="w-6 h-6 text-yellow-400 hover:text-yellow-600" />
+                  <Pencil className="w-6 h-6 text-yellow-400 hover:text-yellow-600" />
                 </button>
                 <button onClick={() => handleDelete(product.id)} title="Eliminar producto">
-                  <TrashIcon className="w-6 h-6 text-red-500 hover:text-red-700" />
+                  <Trash className="w-6 h-6 text-red-500 hover:text-red-700" />
                 </button>
               </div>
             </div>

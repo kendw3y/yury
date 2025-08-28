@@ -1,4 +1,4 @@
-import type { Product } from '@/modules/shopping/interfaces/interfaces'
+import type { Product, Producto } from '@/modules/shopping/interfaces/interfaces'
 import axios from 'axios'
 
 const productApi = axios.create({
@@ -6,11 +6,25 @@ const productApi = axios.create({
 })
 
 export const getProductCar = async():Promise<Product[]> => {
-    const resp = await productApi.get('products')
+    const resp = await productApi.get('productsCar')
     const data = resp.data
     return data
 }
 
 export const deleteItemOfCar = (id:number)=> {
-    return  productApi.delete(`products/${id}`).catch(error => console.log(error))
+    return  productApi.delete(`productsCar/${id}`).catch(error => console.log(error))
+}
+
+export const getProducts = async () : Promise<Producto[]> => {
+    const resp = await productApi.get('products')
+    const data = resp.data
+    return data
+}
+export const updateProduct = async (newProduct:Producto) => {
+    try{
+        return await productApi.patch(`products/${newProduct.id}`,newProduct)
+    }catch(error){
+        throw error
+    }
+    
 }

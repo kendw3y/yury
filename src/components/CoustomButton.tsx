@@ -32,7 +32,7 @@ export const CoustomButton = ( { iconButton : Icon,handleOnClick=() => {},classN
 			}}
 			style={{backgroundColor:`${colorButton?? '#ffffff'}`}}
 			onClick={handleOnClick}
-			className={`${className} cursor-pointer disabled:opacity-30 flex rounded-3xl  py-2 pl-5 pr-5 gap-1 shadow-md `} 
+			className={`${className} cursor-pointer disabled:opacity-30 flex rounded-lg justify-center py-2 px-4 gap-1 shadow-md `} 
 		>
 			{Icon&&<Icon className="w-5 h-full" />}
 			<span className={`text-[16px] h-full font-bold text-center ${className?.includes('text-hidden')?"hidden sm:block":""}`}>{tittleButton?tittleButton:""}</span>

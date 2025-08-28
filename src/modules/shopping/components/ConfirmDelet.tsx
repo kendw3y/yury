@@ -25,7 +25,7 @@ export const ConfirmDelet = ({deletElement}: Props) => {
 				className=" sm:justify-self-start   cursor-pointer hover:text-red-400"
 			/>
 			<Modal tittle="Eliminar" handleIsOpen={handleIsOpen} isOpen={isModalOpen}>
-				<div className="flex flex-col gap-3">
+				<div className="flex flex-col gap-4">
 					<p className="text-center ">¿Está seguro que desea eliminar el producto de su carrito?</p>
 					<div className="flex justify-between items-center">
 						<CoustomButton handleOnClick={handleDelet} hoverColor="#f54927" colorButton="#F54927ab" tittleButton="Eliminar" />

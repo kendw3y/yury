@@ -26,22 +26,20 @@ module.exports = {
 			},
 			colors: {
 				...defaultConfig.theme.extend.colors,
-				blue: {
-					50: "#e6f0ff",
-					100: "#cce0ff",
-					200: "#99c2ff",
-					300: "#66a3ff",
-					400: "#3385ff",
-					500: "#0066ff",
-					600: "#0052cc",
-					700: "#003d99",
-					800: "#002966",
-					900: "#001433",
+				primary: "#111420",
+				pink: {
+					DEFAULT: "#D40C63",
+					dark: "#B00A54",
 				},
-				rosa: "#D40C63",
-				amarillo: "#FCCE08",
-				azul: "#335BC6",
-				blanco: "#ffffff",
+				yellow: {
+					DEFAULT: "#FCCE08",
+					dark: "#E6B907",
+				},
+				blue: {
+					DEFAULT: "#335BC6",
+					dark: "#2A4BA3",
+				},
+				accent: "#335BC6",
 			},
 			borderRadius: {
 				lg: "var(--radius)",

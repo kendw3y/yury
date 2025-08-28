@@ -5,32 +5,30 @@ import {
 	MdKeyboardArrowLeft,
 } from "react-icons/md";
 
-import { flexRender } from "@tanstack/react-table";
+import { flexRender, type ColumnDef } from "@tanstack/react-table";
 import { useCoustomTable } from "../hooks/useTable";
 import { ActionButtons } from "./ActionButtons";
-import { useSelectedRowContext } from "../context/SelectRowContext";
+import { useSelectedRowContext } from "../context/UserSelectRowContext";
 import { useEffect } from "react";
-import { useUser } from "../hooks/useUser";
 
 interface TableProps {
 	title?: string;
+	data:Array<any>,
+	columns: ColumnDef<any>[],
 }
 
-export function Table({ title }: TableProps) {
+export function UserTable({ title,data,columns }: TableProps) {
 	
-	const { table, filters, setFilters } = useCoustomTable();
-	const {isLoadingUser,status} = useUser()
+	const { table, filters, setFilters } = useCoustomTable({columns,data,selctedRow:true});
 	
 	const context = useSelectedRowContext()
 
 	useEffect(() => {
 	  context?.setRowSelected(table.getSelectedRowModel().flatRows.map(row => row.original))
 	}, [table.getSelectedRowModel().flatRows])
-	
-	
 	return (
-		<div className=" flex flex-col gap-6 w-full  md:px-16 sm:pt-8 pt-3 sm:px-2 px-4 text-gray-300 ">
-			<h1 className="md:text-4xl sm:text-3xl text-2xl  font-bold  text-center  ">
+		<div className=" flex flex-col gap-4 w-[93%]  items-center p-6 rounded-2xl   text-gray-300  ">
+			<h1 className="md:text-3xl sm:text-2xl text-xl  font-bold  text-center  ">
 				{title ?? "Table"}
 			</h1>
 			<ActionButtons
@@ -38,9 +36,9 @@ export function Table({ title }: TableProps) {
 				setFilters={setFilters}
 				rowSelcted={table.getSelectedRowModel().flatRows.map(row => row.original)}
 			/>
-			<div className=" overflow-x-auto rounded-t-xl  shadow-xl bg-gray-900">
-				<table className="w-full min-w-[800px] overflow-x-auto">
-					<thead>
+			<div className="  w-full overflow-x-auto rounded-t-lg  shadow-xl bg-gray-900">
+				<table className=" w-full ">
+					<thead className="">
 						{table.getHeaderGroups().map(headerGroup => (
 							<tr key={headerGroup.id} className="bg-[#1f2d3f]  ">
 								{headerGroup.headers.map(header => (
@@ -56,7 +54,7 @@ export function Table({ title }: TableProps) {
 						))}
 					</thead>
 					<tbody key={table.getPageCount()}>
-						{isLoadingUser? <tr><td>karel</td></tr> :table.getRowModel().rows.map(row => (
+						{table.getRowModel().rows.map(row => (
 							<tr key={row.id} className=" ">
 								{row.getVisibleCells().map(cell => (
 									<td key={cell.id} className="py-4 px-2 text-center border-b border-[#19264193]">
@@ -68,7 +66,7 @@ export function Table({ title }: TableProps) {
 					</tbody>
 				</table>
 			</div>
-			<div className="flex justify-end gap-1 items-center px-3">
+			<div className="flex  gap-1 items-center px-3">
 				<button
 					onClick={() => table.setPageIndex(0)}
 					className="rounded-full hover:bg-white/10 transition-colors ease-in-out duration-300 p-1"
@@ -102,7 +100,7 @@ export function Table({ title }: TableProps) {
 					<MdKeyboardDoubleArrowRight className="w-6 h-6" />
 				</button>
 			</div>
-			<h1>{status}</h1>
+			
 		</div>
 	);
 }
