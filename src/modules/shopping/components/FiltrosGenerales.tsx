@@ -55,7 +55,7 @@ export const FiltrosGenerales = ({ tableState: table }: Props) => {
   };
 
   return (
-    <div className="flex flex-col gap-4 items-start md:flex md:flex-row  md:justify-between md:items-end  ">
+    <div className="flex flex-col gap-4   md:flex md:flex-row  md:justify-between   ">
       <section className=" flex-1 h-full">
         <div className="flex relative flex-1 h-full">
           <input
@@ -63,16 +63,16 @@ export const FiltrosGenerales = ({ tableState: table }: Props) => {
             onChange={(e) => table.setGlobalFilter(e.target.value)}
             type="text"
             placeholder="Buscar productos..."
-            className="pl-10 py-2 w-full  rounded-md sm:h-full text-gray-200 bg-gray-800 placeholder:text-gray-400 focus:outline-2 focus:outline-offset-1 focus:outline-gray-400"
+            className="pl-10 py-3 w-full   rounded-md sm:h-full text-gray-200 bg-gray-800 placeholder:text-gray-400 focus:outline-2 focus:outline-offset-1 focus:outline-gray-400"
           />
-          <Search className="w-[18px] h-[18px] text-gray-400 absolute left-[12px] top-[10px] " />
+          <Search className="w-[18px] h-[18px] text-gray-400 absolute left-[12px] top-[12px] " />
         </div>
       </section>
       {/* Filtros principales */}
       <section className=" flex flex-col justify-center items-start  gap-2 flex-wrap  ">
         <div className="sm:flex sm:flex-row flex  gap-2 flex-wrap ">
           <SelectLabelCoustom
-            className="w-[150px]"
+            className="w-[150px] h-full"
             label="Tipo"
             onChange={(value) => filterGeneral(value)}
             value="all"

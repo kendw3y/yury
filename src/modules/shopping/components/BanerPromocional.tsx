@@ -48,7 +48,7 @@ const PromotionalBanner: React.FC = () => {
                 <h2 className="text-4xl font-bold mb-4">Personaliza tus productos</h2>
                 <p className="text-xl mb-6">De tu sueño a la realidad</p>
                 {!isProductsPage && (
-                  <Link to="productos" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-bold text-lg transition-colors">
+                  <Link to="products" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-bold text-lg transition-colors">
                     Explorar Productos
                   </Link>
                 )}

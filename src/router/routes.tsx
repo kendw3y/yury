@@ -10,6 +10,7 @@ import AdminProductsPage from "@/modules/admin/pages/AdminProds";
 import { GestionEncargos } from "@/modules/admin/pages/GestionEncargos";
 import { AdminLayout } from "@/modules/admin/components/AdminLayout";
 import ProductCustomizer from "@/components/ProductCustomizer";
+import { PageCustomProduct } from "@/modules/shopping/pages/PageCustomProduct";
 
 export const routes: RouteObject[] = [
 	{
@@ -63,6 +64,10 @@ export const routes: RouteObject[] = [
 				element: <GestionEncargos />,
 			},
 		]
+	},
+	{
+		path:'personalizar_product',
+		element: <PageCustomProduct/>
 	},
 	{
 		path: "/login",

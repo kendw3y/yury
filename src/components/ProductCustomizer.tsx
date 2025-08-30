@@ -9,7 +9,16 @@ import type { Product, CanvasElement } from '../types/Product';
 import { products } from '../data/products';
 
 const ProductCustomizer: React.FC = () => {
-  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
+  const [selectedProduct, setSelectedProduct] = useState<Product | null>({
+    id: "BOLSA-JAZZIN",
+    name: "Bolsa Non-Woven JAZZIN",
+    family: "HERO SERIGRAFIA",
+    personalizacion: "SERIGRAFIA",
+    areas: ["frente", "reverso"],
+    coloresMax: 4,
+    image: "/bolsa-jazzin.png",
+    price: 3.5,
+  });
   const [selectedPersonalization, setSelectedPersonalization] = useState('TODOS');
   const [selectedArea, setSelectedArea] = useState('');
 

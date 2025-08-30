@@ -8,7 +8,7 @@
       "image": "/bolsa-jazzin.png",
       "description": "Bolsa Non-Woven JAZZIN",
       "isCoustom": false,
-      "favorite": false,
+      "favorite": true,
       "quantity": 3
     },
     {
@@ -19,7 +19,7 @@
       "image": "/bolsa-prosum1.png",
       "description": "Bolsa PROSUM1",
       "isCoustom": false,
-      "favorite": false,
+      "favorite": true,
       "quantity": 8
     },
     {
@@ -30,7 +30,7 @@
       "image": "/mochila-lizcom.png",
       "description": "Mochila para sublimación Lizcom",
       "isCoustom": false,
-      "favorite": false,
+      "favorite": true,
       "quantity": 3
     },
     {

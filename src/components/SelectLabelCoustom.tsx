@@ -37,7 +37,7 @@ export const SelectLabelCoustom: React.FC<CustomSelectProps> = ({
   };
 
   return (
-    <div className="flex gap-0">
+    <div className="flex gap-0 h-full">
       <span className="bg-gray-800 flex text-gray-400 justify-end items-center pl-3 pr-1 rounded-l-lg">
         {label} :
       </span>
