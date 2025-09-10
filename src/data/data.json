@@ -8,7 +8,7 @@
       "image": "/bolsa-jazzin.png",
       "description": "Bolsa Non-Woven JAZZIN",
       "isCoustom": false,
-      "favorite": true,
+      "favorite": false,
       "quantity": 3
     },
     {
@@ -19,7 +19,7 @@
       "image": "/bolsa-prosum1.png",
       "description": "Bolsa PROSUM1",
       "isCoustom": false,
-      "favorite": true,
+      "favorite": false,
       "quantity": 8
     },
     {
@@ -30,7 +30,7 @@
       "image": "/mochila-lizcom.png",
       "description": "Mochila para sublimación Lizcom",
       "isCoustom": false,
-      "favorite": true,
+      "favorite": false,
       "quantity": 3
     },
     {
@@ -113,34 +113,6 @@
   ],
   "encargos": [
     {
-      "id": "1",
-      "create": "2025-03-28T10:30:00Z",
-      "client": {
-        "id": "0.262605603967914",
-        "contrasena": "asd",
-        "direccion": "asd",
-        "email": "karel0931@gmail.com",
-        "Entidad": "Universidad de Murcia",
-        "nombre_apellidos": "Elio Menendez",
-        "telefono": "054493000"
-      },
-      "total": 45,
-      "status": "pendiente",
-      "productos": [
-        {
-          "id": "1",
-          "name": "Bolsa Non-Woven JAZZIN",
-          "price": 79,
-          "category": "bolsas-mochilas",
-          "image": "/bolsa-jazzin.png",
-          "description": "Bolsa Non-Woven JAZZIN",
-          "isCoustom": false,
-          "favorite": false,
-          "quantity": 3
-        }
-      ]
-    },
-    {
       "id": "2",
       "create": "2025-03-27T15:45:00Z",
       "client": {
@@ -153,7 +125,7 @@
         "telefono": "054493000"
       },
       "total": 0,
-      "status": "completado",
+      "status": "pendiente",
       "productos": [
         {
           "id": "5",
@@ -192,7 +164,7 @@
         "telefono": "054493000"
       },
       "total": 120,
-      "status": "completado",
+      "status": "pendiente",
       "productos": [
         {
           "id": "2",
@@ -220,7 +192,7 @@
         "telefono": "054493000"
       },
       "total": 45,
-      "status": "pendiente",
+      "status": "completado",
       "productos": [
         {
           "id": "4",
@@ -304,7 +276,7 @@
         "telefono": "asd"
       },
       "total": 12,
-      "status": "pendiente",
+      "status": "completado",
       "productos": [
         {
           "id": "1",

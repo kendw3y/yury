@@ -107,6 +107,23 @@ export const AddProduct = ({ onClouse }: Props) => {
                 </span>
               )}
             </div>
+            {/* Tipo */}
+            <div className="flex flex-col gap-1">
+              <label className="text-gray-300">Tipo:</label>
+              <select
+                {...register("isCoustom")}
+                className="py-2 px-3 bg-[#29374ddc] text-gray-300 disabled:bg-transparent w-full border-2 border-[#29374ddc] rounded-lg focus:outline-none"
+              >
+                <option value="true">Personalizable</option>
+                <option value="false">No Personalizable</option>
+                
+              </select>
+              {errors.category && (
+                <span className="text-red-400 text-sm">
+                  {errors.category.message}
+                </span>
+              )}
+            </div>
             <div className="pt-2 text-gray-300">
               <CoustomButton
                 type="submit"

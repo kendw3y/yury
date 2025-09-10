@@ -7,6 +7,7 @@ import {
   getFilteredRowModel,
   type SortingState,
   type RowSelectionState,
+  type ColumnFiltersState,
 } from "@tanstack/react-table";
 import { useState } from "react";
 
@@ -22,6 +23,7 @@ export const useCoustomTable = ({
   selctedRow,
 }: useCoustomTableProps) => {
   const [sorting, setSorting] = useState<SortingState>([]);
+  const [columFilters, setColumFilters] = useState<ColumnFiltersState>([]);
   const [filters, setFilters] = useState("");
   const [rowSelectionState, setRowSelectionState] = useState<RowSelectionState>(
     {}
@@ -67,10 +69,12 @@ export const useCoustomTable = ({
     getFilteredRowModel: getFilteredRowModel(),
     state: {
       sorting,
+      columnFilters: columFilters,
       globalFilter: filters,
       rowSelection: rowSelectionState,
     },
     onSortingChange: setSorting,
+    onColumnFiltersChange: setColumFilters,
     onGlobalFilterChange: setFilters,
     onRowSelectionChange: setRowSelectionState,
     enableRowSelection: true,

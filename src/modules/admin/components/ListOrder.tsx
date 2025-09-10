@@ -10,7 +10,7 @@ type Props = {
 
 export const ListOrder = ({ columnLabel, data, rowExpand }: Props) => {
   return (
-    <div className="w-full flex flex-col pb-8">
+    <div className="w-full flex flex-col ">
       <div className="min-w-full bg-gray-900 overflow-x-auto rounded-lg ">
         {/* Encabezado */}
         <div className="grid grid-cols-6 bg-gray-800 text-gray-100 font-semibold ">

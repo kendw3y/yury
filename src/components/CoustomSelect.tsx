@@ -1,15 +1,15 @@
-// components/CustomSelect.tsx
+import { ChevronDown } from "lucide-react";
 import React, { useState } from "react";
 
 interface Option {
   label: string;
-  value: string | number;
+  value: string;
 }
 
 interface CustomSelectProps {
   options: Option[];
   value: string;
-  onChange: (value: string ) => void;
+  onChange: (value: string) => void;
   placeholder?: string;
   // Estilos personalizables
   bgColor?: string; // fondo
@@ -52,7 +52,7 @@ export const CustomSelect: React.FC<CustomSelectProps> = ({
   };
 
   return (
-    <div className={`relative inline-block w-full ${className}`}>
+    <div className={`relative inline-block ${className} `}>
       {/* Select simulado */}
       <div
         onClick={() => setIsOpen(!isOpen)}
@@ -63,20 +63,7 @@ export const CustomSelect: React.FC<CustomSelectProps> = ({
         tabIndex={0}
       >
         <span>{selectedLabel}</span>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-5 w-5 text-gray-500"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d={isOpen ? "M5 15l7-7 7 7" : "M19 9l-7 7-7-7"}
-          />
-        </svg>
+        <ChevronDown className="w-5 h-5" />
       </div>
 
       {/* Dropdown */}
@@ -84,8 +71,7 @@ export const CustomSelect: React.FC<CustomSelectProps> = ({
         <ul
           className={`   ${bgColor}
 ${textColor}
-${borderWidth} ${borderColor}
-${borderRadius}
+rounded-md
 absolute
 z-10
 mt-1
@@ -93,9 +79,7 @@ w-full
 max-h-60
 overflow-auto
 shadow-lg
-ring-1
-ring-black
-ring-opacity-5
+
           `}
           role="listbox"
         >
@@ -113,9 +97,9 @@ ring-opacity-5
                 duration-150
                 flex
                 items-center
-                border-b
+                
                 border-gray-100
-                last:border-b-0
+                
               `}
               role="option"
               aria-selected={option.value === value}

@@ -84,7 +84,7 @@ export function UserTable({ title, data, columns }: TableProps) {
           })}
         </div>
       </div>
-      <div className="flex  gap-1 items-center px-3">
+      <div id="pagination" className="flex  gap-1 items-center px-3">
         <button
           onClick={() => table.setPageIndex(0)}
           className="rounded-full hover:bg-white/10 transition-colors ease-in-out duration-300 p-1"

@@ -11,6 +11,7 @@ import { GestionEncargos } from "@/modules/admin/pages/GestionEncargos";
 import { AdminLayout } from "@/modules/admin/components/AdminLayout";
 import ProductCustomizer from "@/components/ProductCustomizer";
 import { PageCustomProduct } from "@/modules/shopping/pages/PageCustomProduct";
+import { ProtectedRoute } from "@/components/ProtectedRoute";
 
 export const routes: RouteObject[] = [
 	{
@@ -45,25 +46,29 @@ export const routes: RouteObject[] = [
 	},
 	{
 		path: 'admin',
-		element: <AdminLayout/>,
+		element: (<ProtectedRoute><AdminLayout/></ProtectedRoute>),
 		children: [
 			{
-				index:true,
-				element:<AdminUser />
-			},
-			{
-				path: "gestion_user",
+				path: "usuarios",
 				element: <AdminUser />,
 			},
 			{
-				path: "gestion_products",
+				path: "productos",
 				element: <AdminProductsPage />,
 			},
 			{
-				path: "gestion_encargos",
+				path: "encargos",
 				element: <GestionEncargos />,
 			},
+			{
+				path: "*",
+				element: <Navigate to={"/admin/encargos"} replace />,
+			}
 		]
+	},
+	{
+		path:'admin/login',
+		element: <AutenticacionMayor />
 	},
 	{
 		path:'personalizar_product',
