@@ -1,0 +1,34 @@
+export type User = {
+    id: string
+    nombre_apellidos:string
+    email: string
+    telefono: string
+    Entidad: string
+    direccion: string
+    contrasena:string
+    provincia?: string
+    municipio?: string
+}
+export type Input = {
+  nombre_apellidos:string,
+  telefono:string,
+  correo:string,
+  entidad:string,
+  contrasena:string,
+  direccion:string,
+  conf_contrasena:string,
+  provincia:string,
+  municipio:string
+}
+
+export type EditInput = {
+  nombre_apellidos:string,
+  telefono:string,
+  correo:string,
+  entidad:string,
+  contrasena?:string,
+  direccion:string,
+  conf_contrasena?:string,
+  provincia:string,
+  municipio:string
+}

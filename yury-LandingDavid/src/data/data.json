@@ -1,0 +1,480 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Bolsa Non-Woven JAZZIN",
+      "price": "15",
+      "category": "bolsas-mochilas",
+      "image": "/bolsa-jazzin.png",
+      "description": "Bolsa Non-Woven JAZZIN",
+      "isCoustom": false,
+      "favorite": false,
+      "quantity": 3
+    },
+    {
+      "id": "2",
+      "name": "BOLSA-PROSUM1",
+      "price": "Consultar",
+      "category": "bolsas-mochilas",
+      "image": "/bolsa-prosum1.png",
+      "description": "Bolsa PROSUM1",
+      "isCoustom": false,
+      "favorite": false,
+      "quantity": 8
+    },
+    {
+      "id": "3",
+      "name": "Mochila Sublimación Lizcom",
+      "price": "Consultar",
+      "category": "bolsas-mochilas",
+      "image": "/mochila-lizcom.png",
+      "description": "Mochila para sublimación Lizcom",
+      "isCoustom": false,
+      "favorite": true,
+      "quantity": 3
+    },
+    {
+      "id": "4",
+      "name": "Polo Tecnic Plus - 100% Poliéster",
+      "price": "Consultar",
+      "category": "ropa-textiles",
+      "image": "/polo-tecnic-plus.png",
+      "description": "Polo Tecnic Plus 100% poliéster",
+      "isCoustom": true,
+      "favorite": true,
+      "quantity": 3
+    },
+    {
+      "id": "5",
+      "name": "Pullovers 150 gr. 100% Algodón",
+      "price": "Consultar",
+      "category": "ropa-textiles",
+      "image": "/pullovers-algodon.png",
+      "description": "Pullovers 150 gr de algodón",
+      "isCoustom": true,
+      "favorite": false,
+      "quantity": 0
+    },
+    {
+      "id": "6",
+      "name": "Neceser-KRESTON1",
+      "price": "Consultar",
+      "category": "accesorios-personales",
+      "image": "/neceser-kreston1.png",
+      "description": "Neceser KRESTON1",
+      "isCoustom": true,
+      "favorite": false,
+      "quantity": 0
+    },
+    {
+      "id": "7",
+      "name": "FUNDA-EKAIN2",
+      "price": "Consultar",
+      "category": "accesorios-personales",
+      "image": "/funda-ekain2.png",
+      "description": "Funda EKAIN2",
+      "isCoustom": true,
+      "favorite": false,
+      "quantity": 4
+    },
+    {
+      "id": "8",
+      "name": "Soporte Protok (Portacelular)",
+      "price": "Consultar",
+      "category": "tecnologia",
+      "image": "/soporte-protok.png",
+      "description": "Soporte Protok para celular",
+      "isCoustom": true,
+      "favorite": false,
+      "quantity": 3
+    },
+    {
+      "id": "9",
+      "name": "Bidón Deportivo (400 mL)",
+      "price": "Consultar",
+      "category": "botellas-bebidas",
+      "image": "/bidon-400ml.png",
+      "description": "Bidón deportivo 400 mL",
+      "isCoustom": true,
+      "favorite": false,
+      "quantity": 0
+    },
+    {
+      "id": "10",
+      "name": "Lunchera Coolcan – Capacidad 6 latas",
+      "price": "Consultar",
+      "category": "botellas-bebidas",
+      "image": "/lunchera-coolcan.png",
+      "description": "Lunchera Coolcan para 6 latas",
+      "isCoustom": true,
+      "quantity": 0,
+      "favorite": false
+    },
+    {
+      "id": "93b5",
+      "name": "avion",
+      "description": "es un avion",
+      "price": 45,
+      "category": "ropa-textiles",
+      "image": "blob:http://localhost:5173/5b04b551-7490-4020-9f04-cd7c627df316",
+      "isCoustom": true,
+      "quantity": 0,
+      "favorite": false
+    }
+  ],
+  "encargos": [
+    {
+      "id": "2",
+      "create": "2025-03-27T15:45:00Z",
+      "client": {
+        "id": "0.6748658588163454",
+        "contrasena": "asd",
+        "direccion": "asd",
+        "email": "karel0931@gmail.com",
+        "Entidad": "asd",
+        "nombre_apellidos": "Edzio Menendez",
+        "telefono": "054493000"
+      },
+      "total": 0,
+      "status": "pendiente",
+      "productos": [
+        {
+          "id": "5",
+          "name": "Pullovers 150 gr. 100% Algodón",
+          "price": 3242,
+          "category": "ropa-textiles",
+          "image": "/pullovers-algodon.png",
+          "description": "Pullovers 150 gr de algodón",
+          "isCoustom": true,
+          "favorite": false,
+          "quantity": 0
+        },
+        {
+          "id": "9",
+          "name": "Bidón Deportivo (400 mL)",
+          "price": 234,
+          "category": "botellas-bebidas",
+          "image": "/bidon-400ml.png",
+          "description": "Bidón deportivo 400 mL",
+          "isCoustom": true,
+          "favorite": false,
+          "quantity": 0
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "create": "2025-03-26T09:20:00Z",
+      "client": {
+        "id": "0.34707161460367864",
+        "contrasena": "asd",
+        "direccion": "asd",
+        "email": "karel0931@gmail.com",
+        "Entidad": "Universidad de Murcia",
+        "nombre_apellidos": "Edzio Menendez",
+        "telefono": "054493000"
+      },
+      "total": 120,
+      "status": "pendiente",
+      "productos": [
+        {
+          "id": "2",
+          "name": "BOLSA-PROSUM1",
+          "price": 123,
+          "category": "bolsas-mochilas",
+          "image": "/bolsa-prosum1.png",
+          "description": "Bolsa PROSUM1",
+          "isCoustom": false,
+          "favorite": false,
+          "quantity": 8
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "create": "2025-03-25T18:10:00Z",
+      "client": {
+        "id": "0.0660271087329759",
+        "contrasena": "asd",
+        "direccion": "asd",
+        "email": "karel0931@gmail.com",
+        "Entidad": "asd",
+        "nombre_apellidos": "Edzio Menendez",
+        "telefono": "054493000"
+      },
+      "total": 45,
+      "status": "completado",
+      "productos": [
+        {
+          "id": "4",
+          "name": "Polo Tecnic Plus - 100% Poliéster",
+          "price": 892,
+          "category": "ropa-textiles",
+          "image": "/polo-tecnic-plus.png",
+          "description": "Polo Tecnic Plus 100% poliéster",
+          "isCoustom": true,
+          "favorite": false,
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "create": "2025-08-24T12:00:00Z",
+      "client": {
+        "id": "0.6504690566717929",
+        "contrasena": "asd",
+        "direccion": "asd",
+        "email": "asdasd@asdasd.asdasd",
+        "Entidad": "asd",
+        "nombre_apellidos": "asd",
+        "telefono": "asd"
+      },
+      "total": 12,
+      "status": "pendiente",
+      "productos": [
+        {
+          "id": "1",
+          "name": "Bolsa Non-Woven JAZZIN",
+          "price": 15,
+          "category": "bolsas-mochilas",
+          "image": "/bolsa-jazzin.png",
+          "description": "Bolsa Non-Woven JAZZIN",
+          "isCoustom": false,
+          "favorite": false,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "create": "2025-08-20T12:00:00Z",
+      "client": {
+        "id": "0.6504690566717929",
+        "contrasena": "asd",
+        "direccion": "asd",
+        "email": "asdasd@asdasd.asdasd",
+        "Entidad": "asd",
+        "nombre_apellidos": "asd",
+        "telefono": "asd"
+      },
+      "total": 12,
+      "status": "pendiente",
+      "productos": [
+        {
+          "id": "1",
+          "name": "Bolsa Non-Woven JAZZIN",
+          "price": 15,
+          "category": "bolsas-mochilas",
+          "image": "/bolsa-jazzin.png",
+          "description": "Bolsa Non-Woven JAZZIN",
+          "isCoustom": false,
+          "favorite": false,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "create": "2025-08-20T12:00:00Z",
+      "client": {
+        "id": "0.6504690566717929",
+        "contrasena": "asd",
+        "direccion": "asd",
+        "email": "asdasd@asdasd.asdasd",
+        "Entidad": "asd",
+        "nombre_apellidos": "asd",
+        "telefono": "asd"
+      },
+      "total": 12,
+      "status": "completado",
+      "productos": [
+        {
+          "id": "1",
+          "name": "Bolsa Non-Woven JAZZIN",
+          "price": 15,
+          "category": "bolsas-mochilas",
+          "image": "/bolsa-jazzin.png",
+          "description": "Bolsa Non-Woven JAZZIN",
+          "isCoustom": false,
+          "favorite": false,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "create": "2025-08-20T12:00:00Z",
+      "client": {
+        "id": "0.6504690566717929",
+        "contrasena": "asd",
+        "direccion": "asd",
+        "email": "asdasd@asdasd.asdasd",
+        "Entidad": "asd",
+        "nombre_apellidos": "asd",
+        "telefono": "asd"
+      },
+      "total": 12,
+      "status": "pendiente",
+      "productos": [
+        {
+          "id": "1",
+          "name": "Bolsa Non-Woven JAZZIN",
+          "price": 15,
+          "category": "bolsas-mochilas",
+          "image": "/bolsa-jazzin.png",
+          "description": "Bolsa Non-Woven JAZZIN",
+          "isCoustom": false,
+          "favorite": false,
+          "quantity": 1
+        }
+      ]
+    }
+  ],
+  "productsCar": [
+    {
+      "id": "2",
+      "name": "BOLSA-PROSUM1",
+      "price": 0,
+      "image": "/bolsa-prosum1.png",
+      "color": "Sin especificar",
+      "quantity": 8
+    },
+    {
+      "id": "4",
+      "name": "Polo Tecnic Plus - 100% Poliéster",
+      "price": 0,
+      "image": "/polo-tecnic-plus.png",
+      "color": "Sin especificar",
+      "quantity": 3
+    },
+    {
+      "id": "3",
+      "name": "Mochila Sublimación Lizcom",
+      "price": 0,
+      "image": "/mochila-lizcom.png",
+      "color": "Sin especificar",
+      "quantity": 3
+    },
+    {
+      "id": "1",
+      "name": "Bolsa Non-Woven JAZZIN",
+      "price": 15,
+      "image": "/bolsa-jazzin.png",
+      "color": "Sin especificar",
+      "quantity": 3
+    }
+  ],
+  "usuarios": [
+    {
+      "id": "0.262605603967914",
+      "contrasena": "asd",
+      "direccion": "asd",
+      "email": "karel0931@gmail.com",
+      "Entidad": "Universidad de Murcia",
+      "nombre_apellidos": "Elio Menendez",
+      "telefono": "51307651",
+      "provincia": "Guantánamo",
+      "municipio": "Caimanera"
+    },
+    {
+      "id": "0.6748658588163454",
+      "contrasena": "asd",
+      "direccion": "asd",
+      "email": "karel0931@gmail.com",
+      "Entidad": "asd",
+      "nombre_apellidos": "Edzio Menendez",
+      "telefono": "054493000",
+      "provincia": "Camagüey",
+      "municipio": "Najasa"
+    },
+    {
+      "id": "0.34707161460367864",
+      "contrasena": "asd",
+      "direccion": "asd",
+      "email": "karel0931@gmail.com",
+      "Entidad": "Universidad de Murcia",
+      "nombre_apellidos": "Edzio Menendez",
+      "telefono": "054493000",
+      "provincia": "Las Tunas",
+      "municipio": "Manatí"
+    },
+    {
+      "id": "0.0660271087329759",
+      "contrasena": "asd",
+      "direccion": "asd",
+      "email": "karel0931@gmail.com",
+      "Entidad": "asd",
+      "nombre_apellidos": "Edzio Menendez",
+      "telefono": "054493000",
+      "provincia": "Santiago de Cuba",
+      "municipio": "Julio Antonio Mella"
+    },
+    {
+      "id": "0.6504690566717929",
+      "contrasena": "asd",
+      "direccion": "asd",
+      "email": "asdasd@asdasd.asdasd",
+      "Entidad": "asd",
+      "nombre_apellidos": "asd",
+      "telefono": "asd",
+      "provincia": "Pinar del Río",
+      "municipio": "San Luis"
+    },
+    {
+      "id": "0.5595613985155242",
+      "contrasena": "asd",
+      "direccion": "asd",
+      "email": "asd@cara.asdasd",
+      "Entidad": "asd",
+      "nombre_apellidos": "asd",
+      "telefono": "asd",
+      "provincia": "Santiago de Cuba",
+      "municipio": "Tercer Frente"
+    },
+    {
+      "id": "0.6848424083998556",
+      "contrasena": "asd",
+      "direccion": "asd",
+      "email": "asd@asdads.asd",
+      "Entidad": "asd",
+      "nombre_apellidos": "asdasdasd",
+      "telefono": "123123",
+      "provincia": "Camagüey",
+      "municipio": "Santa Cruz del Sur"
+    },
+    {
+      "id": "0.6316219494986618",
+      "contrasena": "asd",
+      "direccion": "asd",
+      "email": "karel0931@gmail.com",
+      "Entidad": "asd",
+      "nombre_apellidos": "Edzio Menendez",
+      "telefono": "054493000",
+      "provincia": "Granma",
+      "municipio": "Jiguaní"
+    },
+    {
+      "id": "0.8667869921555015",
+      "contrasena": "asd",
+      "direccion": "asd",
+      "email": "karel0931@gmail.com",
+      "Entidad": "asd",
+      "nombre_apellidos": "Edzio Menendez",
+      "telefono": "054493000",
+      "provincia": "Granma",
+      "municipio": "Yara"
+    },
+    {
+      "id": "0.003078784273674584",
+      "contrasena": "asd",
+      "direccion": "asd",
+      "email": "asdasd@asdasd.asdasd",
+      "Entidad": "asd",
+      "nombre_apellidos": "asd",
+      "telefono": "asd",
+      "provincia": "Cienfuegos",
+      "municipio": "Rodas"
+    }
+  ]
+}
