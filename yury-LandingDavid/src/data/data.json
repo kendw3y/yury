@@ -111,13 +111,13 @@
       "favorite": false
     },
     {
-      "id": "93b5",
-      "name": "avion",
-      "description": "es un avion",
-      "price": 45,
-      "category": "ropa-textiles",
-      "image": "blob:http://localhost:5173/5b04b551-7490-4020-9f04-cd7c627df316",
-      "isCoustom": true,
+      "id": "e0cd",
+      "name": "switch",
+      "description": "es para la red",
+      "price": 900,
+      "category": "tecnologia",
+      "image": "blob:http://localhost:5173/c195633f-0215-437e-adea-99f38188c0d4",
+      "isCoustom": false,
       "quantity": 0,
       "favorite": false
     }
