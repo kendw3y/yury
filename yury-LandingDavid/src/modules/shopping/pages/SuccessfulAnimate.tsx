@@ -1,16 +1,13 @@
 import Lottie from "lottie-react";
-import animation from './../../../../public/Animation - 1751001094827.json';
+import animation from '../../../../public/Animation - 1751001094827.json';
 import { CoustomButton } from "@/components/CoustomButton";
+import { useNavigate } from "react-router-dom";
 
-
-type Props = {
-    setShow:()=>void
-};
-
-export function SuccessfulAnimate({setShow}: Props) {
+export function SuccessfulAnimate() {
+  const navigateTo = useNavigate()
   return (
-    <div className="fixed top-0 left-0 bottom-0 right-0  flex flex-col justify-center items-center z-50 bg-[#111420] ">
-      <div className="flex flex-col items-center py-4 gap-5 sm:gap-7 overflow-auto">
+    <div className="fixed top-0 left-0 bottom-0 right-0 flex flex-col  text-white  items-center  bg-[#111420]  scroll-container ">
+      <div className="flex flex-col items-center  py-4 gap-5 sm:gap-7  h-full ">
           <Lottie animationData={animation} className="w-52 h-52 sm:w-64 sm:h-64"></Lottie>
           <div className="text-center">
             <h1 className="text-4xl font-black">Pedido Confirmado</h1>
@@ -28,7 +25,7 @@ export function SuccessfulAnimate({setShow}: Props) {
           </div>
           <div className="flex  justify-center ">
             <CoustomButton
-              handleOnClick={setShow}
+              handleOnClick={()=> navigateTo('/')}
               tittleButton="Volver a Inicio"
               colorButton="#335ac673"
 						  hoverColor="#335ac6cb"

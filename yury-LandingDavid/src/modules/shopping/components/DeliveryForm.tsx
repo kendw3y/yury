@@ -42,7 +42,7 @@ export const DeliveryForm = ({ onBack, onContinue }: DeliveryFormProps) => {
 	return (
 		<div className="sm:px-10 sm:py-6 flex text-white justify-center p-3  ">
 			<div className="bg-[#1A1D2D] sm:rounded-xl rounded-lg shadow-xl flex flex-col gap-6 p-6  ">
-				<h2 className="text-2xl text-center font-bold  text-white">Información de entrega</h2>
+				<h2 className="text-2xl text-center font-bold  text-white">Información del cliente</h2>
 				<form onSubmit={onSubmit} className="">
 					<div className="grid lg:grid-cols-[340px_340px] sm:grid-cols-[400px] grid-cols-[300px] justify-center  gap-6">
 						<div>

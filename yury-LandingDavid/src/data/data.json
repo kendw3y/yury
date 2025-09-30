@@ -3,7 +3,7 @@
     {
       "id": "1",
       "name": "Bolsa Non-Woven JAZZIN",
-      "price": "15",
+      "price": 30,
       "category": "bolsas-mochilas",
       "image": "/bolsa-jazzin.png",
       "description": "Bolsa Non-Woven JAZZIN",
@@ -14,7 +14,7 @@
     {
       "id": "2",
       "name": "BOLSA-PROSUM1",
-      "price": "Consultar",
+      "price": 34,
       "category": "bolsas-mochilas",
       "image": "/bolsa-prosum1.png",
       "description": "Bolsa PROSUM1",
@@ -25,7 +25,7 @@
     {
       "id": "3",
       "name": "Mochila Sublimación Lizcom",
-      "price": "Consultar",
+      "price": 87,
       "category": "bolsas-mochilas",
       "image": "/mochila-lizcom.png",
       "description": "Mochila para sublimación Lizcom",
@@ -36,7 +36,7 @@
     {
       "id": "4",
       "name": "Polo Tecnic Plus - 100% Poliéster",
-      "price": "Consultar",
+      "price": 36,
       "category": "ropa-textiles",
       "image": "/polo-tecnic-plus.png",
       "description": "Polo Tecnic Plus 100% poliéster",
@@ -47,7 +47,7 @@
     {
       "id": "5",
       "name": "Pullovers 150 gr. 100% Algodón",
-      "price": "Consultar",
+      "price": 20,
       "category": "ropa-textiles",
       "image": "/pullovers-algodon.png",
       "description": "Pullovers 150 gr de algodón",
@@ -58,7 +58,7 @@
     {
       "id": "6",
       "name": "Neceser-KRESTON1",
-      "price": "Consultar",
+      "price": 12,
       "category": "accesorios-personales",
       "image": "/neceser-kreston1.png",
       "description": "Neceser KRESTON1",
@@ -69,7 +69,7 @@
     {
       "id": "7",
       "name": "FUNDA-EKAIN2",
-      "price": "Consultar",
+      "price": 47,
       "category": "accesorios-personales",
       "image": "/funda-ekain2.png",
       "description": "Funda EKAIN2",
@@ -80,7 +80,7 @@
     {
       "id": "8",
       "name": "Soporte Protok (Portacelular)",
-      "price": "Consultar",
+      "price": 83,
       "category": "tecnologia",
       "image": "/soporte-protok.png",
       "description": "Soporte Protok para celular",
@@ -91,7 +91,7 @@
     {
       "id": "9",
       "name": "Bidón Deportivo (400 mL)",
-      "price": "Consultar",
+      "price": 82,
       "category": "botellas-bebidas",
       "image": "/bidon-400ml.png",
       "description": "Bidón deportivo 400 mL",
@@ -102,7 +102,7 @@
     {
       "id": "10",
       "name": "Lunchera Coolcan – Capacidad 6 latas",
-      "price": "Consultar",
+      "price": 65,
       "category": "botellas-bebidas",
       "image": "/lunchera-coolcan.png",
       "description": "Lunchera Coolcan para 6 latas",
@@ -135,19 +135,19 @@
         "nombre_apellidos": "Edzio Menendez",
         "telefono": "054493000"
       },
-      "total": 0,
+      "total": 485,
       "status": "pendiente",
       "productos": [
         {
           "id": "5",
           "name": "Pullovers 150 gr. 100% Algodón",
-          "price": 3242,
+          "price": 20,
           "category": "ropa-textiles",
           "image": "/pullovers-algodon.png",
           "description": "Pullovers 150 gr de algodón",
           "isCoustom": true,
           "favorite": false,
-          "quantity": 0
+          "quantity": 2
         },
         {
           "id": "9",
@@ -158,7 +158,7 @@
           "description": "Bidón deportivo 400 mL",
           "isCoustom": true,
           "favorite": false,
-          "quantity": 0
+          "quantity": 1
         }
       ]
     },
@@ -333,36 +333,52 @@
   ],
   "productsCar": [
     {
-      "id": "2",
-      "name": "BOLSA-PROSUM1",
-      "price": 0,
-      "image": "/bolsa-prosum1.png",
-      "color": "Sin especificar",
-      "quantity": 8
-    },
-    {
-      "id": "4",
-      "name": "Polo Tecnic Plus - 100% Poliéster",
-      "price": 0,
-      "image": "/polo-tecnic-plus.png",
-      "color": "Sin especificar",
-      "quantity": 3
-    },
-    {
-      "id": "3",
-      "name": "Mochila Sublimación Lizcom",
-      "price": 0,
-      "image": "/mochila-lizcom.png",
-      "color": "Sin especificar",
-      "quantity": 3
-    },
-    {
       "id": "1",
       "name": "Bolsa Non-Woven JAZZIN",
       "price": 15,
       "image": "/bolsa-jazzin.png",
       "color": "Sin especificar",
       "quantity": 3
+    },
+    {
+      "id": "2",
+      "name": "BOLSA-PROSUM1",
+      "price": 34,
+      "image": "/bolsa-prosum1.png",
+      "color": "Sin especificar",
+      "quantity": 6
+    },
+    {
+      "id": "3",
+      "name": "Mochila Sublimación Lizcom",
+      "price": 87,
+      "image": "/mochila-lizcom.png",
+      "color": "Sin especificar",
+      "quantity": 6
+    },
+    {
+      "id": "4",
+      "name": "Polo Tecnic Plus - 100% Poliéster",
+      "price": 36,
+      "image": "/polo-tecnic-plus.png",
+      "color": "Sin especificar",
+      "quantity": 3
+    },
+    {
+      "id": "7",
+      "name": "FUNDA-EKAIN2",
+      "price": 47,
+      "image": "/funda-ekain2.png",
+      "color": "Sin especificar",
+      "quantity": 4
+    },
+    {
+      "id": "6",
+      "name": "Neceser-KRESTON1",
+      "price": 12,
+      "image": "/neceser-kreston1.png",
+      "color": "Sin especificar",
+      "quantity": 1
     }
   ],
   "usuarios": [

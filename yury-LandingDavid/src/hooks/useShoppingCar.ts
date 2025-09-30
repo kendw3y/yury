@@ -10,8 +10,17 @@ export const useShoppingCar = () => {
         data: items,
     } = useQuery({
         queryKey: ['productCar'],
-        queryFn: getProductCar
+        queryFn: getProductCar,
+        initialData: []
     })
+
+    const calTotal = (products :Product[]) => {
+        let sum = 0
+        products.forEach(item => {
+            sum += (item.quantity*item.price)
+        })
+        return sum
+    }
 
     const deleteProductOfCar = useMutation({
         mutationFn: (id:number)=> deleteItemOfCar(id),
@@ -27,6 +36,8 @@ export const useShoppingCar = () => {
 
     return {
         items,
+        total: calTotal(items),
+        quantity: items.length,
         deleteProductOfCar,
         addProductToCartMutation,
         queryClient

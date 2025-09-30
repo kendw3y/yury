@@ -14,7 +14,7 @@ export const OrderSummary = ({ onBack, onContinue }: OrderSummaryProps) => {
 	return (
 		<div className="flex  justify-center items-center py-8 sm:pt-6 text-white">
 			<div className=" rounded-lg bg-gray-900 shadow-2xl py-10 sm:py-4 px-2 sm:px-6 flex  flex-col gap-8 sm:gap-3 items-center justify-center ">
-				<h2 className="text-2xl font-bold  text-white ">Resumen del precio</h2>
+				<h2 className="text-2xl font-bold  text-white ">Resumen del pedido</h2>
 				<div className="w-full mb-3  py-2 px-3 rounded-lg flex  flex-col gap-3  bg-gray-900/30 scroll-container snap-y snap-mandatory  md:max-h-[305px] ">
 					{products.map(product => (
 						<div key={product.id} className=" flex gap-16 justify-between py-2 px-3 items-center rounded-lg bg-gray-800 shadow-md transition-all duration-300 ease-in-out">

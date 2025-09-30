@@ -1,7 +1,7 @@
 import { CoustomButton } from "@/components/CoustomButton";
-import { SuccessfulAnimate } from "./SuccessfulAnimate";
 import { QrCode } from "lucide-react";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 
 interface PaymentMethodProps {
@@ -11,15 +11,15 @@ interface PaymentMethodProps {
 
 export const PaymentMethod = ({ onBack, total }: PaymentMethodProps) => {
 	const [paymentSelect, setPaymentSelect] = useState("");
-
+	const navigate = useNavigate()
 	const handlePaymentSelect = (method: string) => {
 		setPaymentSelect(method);
 	};
 	const onContinue = () => {
 		if (paymentSelect === "") console.log("selecione un metodo de pago");
-		else setShowConfirm(true);
+		else navigate("/successful");
 	};
-	const [showConfirm, setShowConfirm] = useState(false);
+	
 
 	return (
 		<div className="sm:py-8 sm:px-8 p-3 text-white">
@@ -107,9 +107,7 @@ export const PaymentMethod = ({ onBack, total }: PaymentMethodProps) => {
 									</div>
 								</div>
 								<p className="text-sm text-center text-blanco/80">
-									{paymentSelect === "transfermovil"
-										? "Escanea este código QR con tu aplicación bancaria para pagar con tarjeta Transfermovil"
-										: "Escanea este código QR para realizar la transferencia bancaria Enzona"}
+									Escanea este código QR con tu aplicación bancaria para pagar con tarjeta
 								</p>
 							</div>
 						)}
@@ -132,7 +130,7 @@ export const PaymentMethod = ({ onBack, total }: PaymentMethodProps) => {
 						className=" "
 					/>
 				</div>
-				{showConfirm && <SuccessfulAnimate setShow={() => setShowConfirm(false)} />}
+				
 			</div>
 		</div>
 	);
